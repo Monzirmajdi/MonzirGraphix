@@ -122,14 +122,14 @@ const portfolioData = {
                 image: "images/branding/1000003221.jpg"
             },
             {
-                title: "jk-Arts",
-                description: "شعار لصانع محتوى سوشيال ميديا",
+                title: "Nook Nest",
+                description: "محل لبيع الأثاثات المنزلية و المكتبية",
                 tools: "Adobe Illustrator, Photoshop",
                 image: "images/branding/1000003223.jpg"
             },
             {
-                title: "jk-Arts",
-                description: "شعار لصانع محتوى سوشيال ميديا",
+                title: "Nook Nest",
+                description: "محل لبيع الأثاثات المنزلية و المكتبية",
                 tools: "Adobe Illustrator, Photoshop",
                 image: "images/branding/1000003224.jpg"
             }
@@ -161,6 +161,38 @@ const portfolioData = {
         ]
     }
 };
+
+// Function to populate card previews
+function populateCardPreviews() {
+    document.querySelectorAll(".portfolio-category").forEach(categoryDiv => {
+        const category = categoryDiv.dataset.category;
+        const previewContainer = categoryDiv.querySelector(".card-preview");
+        const items = portfolioData[category].items;
+
+        // Clear existing placeholders
+        previewContainer.innerHTML = "";
+
+        // Add up to 3 image thumbnails
+        for (let i = 0; i < Math.min(items.length, 3); i++) {
+            const item = items[i];
+            if (item.image) {
+                const img = document.createElement("img");
+                img.src = item.image;
+                img.alt = item.title;
+                img.className = "preview-item-img"; // Add a class for styling
+                previewContainer.appendChild(img);
+            } else {
+                // Fallback for items without images (though all branding items now have images)
+                const placeholder = document.createElement("div");
+                placeholder.className = "preview-item";
+                previewContainer.appendChild(placeholder);
+            }
+        }
+    });
+}
+
+// Call populateCardPreviews on page load
+window.addEventListener("load", populateCardPreviews);
 
 // Open modal when portfolio category is clicked
 document.querySelectorAll(".card-btn").forEach(btn => {
@@ -313,5 +345,7 @@ setTimeout(() => {
         typeWriter(subtitle, originalText, 80);
     }
 }, 1500);
+
+
 
 
