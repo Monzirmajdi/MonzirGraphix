@@ -122,14 +122,14 @@ const portfolioData = {
                 image: "images/branding/1000003221.jpg"
             },
             {
-                title: "Nook Nest",
-                description: "محل لبيع الأثاثات المنزلية و المكتبية",
+                title: "jk-Arts",
+                description: "شعار لصانع محتوى سوشيال ميديا",
                 tools: "Adobe Illustrator, Photoshop",
                 image: "images/branding/1000003223.jpg"
             },
             {
-                title: "Nook Nest",
-                description: "محل لبيع الأثاثات المنزلية و المكتبية",
+                title: "jk-Arts",
+                description: "شعار لصانع محتوى سوشيال ميديا",
                 tools: "Adobe Illustrator, Photoshop",
                 image: "images/branding/1000003224.jpg"
             }
