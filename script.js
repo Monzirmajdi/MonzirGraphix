@@ -74,26 +74,6 @@ const portfolioData = {
         title: "Brand Identity & Logos",
         items: [
             {
-                title: "Baseline Medical - Logo Design",
-                description: "Complete brand identity for medical company",
-                tools: "Adobe Illustrator, Photoshop"
-            },
-            {
-                title: "Tech Startup Branding",
-                description: "Full brand package including logo and guidelines",
-                tools: "Adobe Creative Suite"
-            },
-            {
-                title: "Restaurant Chain Identity",
-                description: "Brand identity for Gulf region restaurant",
-                tools: "Illustrator, InDesign"
-            },
-            {
-                title: "Corporate Rebranding",
-                description: "Complete rebrand for established company",
-                tools: "Adobe Creative Suite"
-            },
-            {
                 title: "Ratina clothing & cosmeticss",
                 description: "براند سوداني يتخصص في بيع الاقمشة و الملابس و مستحضرات التجميل",
                 tools: "Adobe Illustrator, Photoshop",
